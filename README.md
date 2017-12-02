@@ -27,3 +27,12 @@
 参考文章：
 - http://www.jianshu.com/p/b7d4e6612e0c
 - https://www.cnblogs.com/android-blogs/p/5703355.html
+
+## 问题##
+- 1.module与Application之间调用的问题
+
+- 2.跨module的Activity 或 Fragment 之间的跳转问题
+
+- 3.AAR 或Library project 重复依赖
+
+- 4.资源名冲突
