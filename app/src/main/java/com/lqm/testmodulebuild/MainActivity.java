@@ -8,6 +8,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.TextView;
 
+import com.alibaba.android.arouter.launcher.ARouter;
 import com.lqm.baselibrary.AppConfig;
 import com.lqm.baselibrary.BaseActivity;
 import com.lqm.baselibrary.utils.ToastUtil;
@@ -34,6 +35,17 @@ public class MainActivity extends BaseActivity {
 
     public void clickB(View view){
         launchActivity(AppConfig.BModuleActivity,"");
+    }
+
+
+    public void clickC(View view){
+        // 1. 应用内简单的跳转(通过URL跳转在'进阶用法'中)
+//        ARouter.getInstance().build("/moduleC/CActivity").navigation();
+
+        // 2. 跳转并携带参数
+        ARouter.getInstance().build("/moduleC/CActivity")
+                .withString("key", "我是通过arouter跳转传过来的数据")
+                .navigation();
     }
 
     @Override

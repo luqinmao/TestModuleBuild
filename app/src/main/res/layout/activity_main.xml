@@ -20,11 +20,19 @@
         android:onClick="clickB"
         android:text="跳转到B " />
 
+    <Button
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:onClick="clickC"
+        android:text="使用ARouter跳转到C " />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="获取返回的数据" />
+        android:text="TextView" />
+
+
 </LinearLayout>
 
 
