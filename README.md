@@ -32,7 +32,10 @@
 - 1.module与Application之间调用的问题
 
 - 2.跨module的Activity 或 Fragment 之间的跳转问题
+    使用ARouter,也可以自己处理
 
 - 3.AAR 或Library project 重复依赖
 
 - 4.资源名冲突
+  :在module中的gradle配置
+   resourcePrefix "preview_" 设置了这个值后，所有的资源名必须以指定的字符串做前缀，否则会报错
