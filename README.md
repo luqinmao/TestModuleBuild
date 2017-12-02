@@ -17,7 +17,11 @@
 组件化开发简单的说就是根据项目的功能模块进行分module开发，每个module可以单独进行运行测试，（其实也就是让每个module运行起来，就是把pludgin改成 Application 发布的时候合并即可）
 
 
-
+## 组件划分 ##
 - 新建BaseModule 存放公共的工具类、网络分装等
 - 逐一开发其他各个模块的module，引用BaseModule，进行模块的开发
+
+
+
+
 
